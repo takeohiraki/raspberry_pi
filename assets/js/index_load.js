@@ -48,6 +48,16 @@ $("#search").on("click", function() {
 });
 
 
+//  NEW
+$("#mysql").on("click", function() {
+    event.preventDefault();
+
+    // navigates the user while manipulating the URL
+    window.location.href = "db_test.html"
+});
+
+
+
 
 // 3. When the user clicks an image, it moves them to results
 $(document).on('click', '.suggested-rest', function() {

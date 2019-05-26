@@ -1,0 +1,49 @@
+
+
+# ssh into rpi
+ssh pi@192.168.0.18
+pass: takeorpi
+
+# Send a file to a folder on the RPI
+scp test.txt pi@192.168.0.19:Desktop/main/
+
+# VNC into raspberry pi
+# Using VNC connect (realvnc)
+server: 192.168.0.19
+Name : whatever
+Username: pi
+Password: takeorpi
+
+# enter mysql on RPI
+sudo mysql -u -root -p
+
+# Show open ports
+netstat -lptn
+
+netstat -lptn --tcp --listening --programs --numeric
+
+
+# Check whether server is running
+sudo service mysql status
+
+
+
+# File where index.html is stored
+cd /var/www/html
+
+
+
+# See current IP of the RPI
+hostname -i
+
+
+
+https://www.digitalocean.com/community/tutorials/how-to-reset-your-mysql-or-mariadb-root-password
+
+
+# Create new user
+GRANT ALL PRIVILEGES ON *.* TO 'guest'@'localhost' IDENTIFIED BY 'default';
+
+# Guest credentials
+username: guest
+pass: default
