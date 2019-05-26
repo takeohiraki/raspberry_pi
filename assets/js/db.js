@@ -1,20 +1,11 @@
-//  NEW
-$("#orders").on("click", function() {
-    event.preventDefault();
-
-    db_orders;
-    
-});
-
-
-
 
 
 var db_orders = function() {
     var keys = require("./keys.js")
     var mysql = require("mysql");
-    require("dotenv").config();
+    // require("dotenv").config();
 
+    console.log("DB")
     var connection = mysql.createConnection({
       host: "localhost",
     
